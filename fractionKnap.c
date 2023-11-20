@@ -62,7 +62,7 @@ int main() {
             cap=cap-weights[i];
         }
         else{
-            knap[i]=((float)(cap)/(float)weights[i]);
+            knap[i]=(cap)/weights[i];
             break;
         }
     }

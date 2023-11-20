@@ -57,7 +57,7 @@ int main() {
 
     for (int i = 0; i < maxDeadline; i++)
         ans[i] = '0';
-    float profit=1;
+    float profit=2;
     for (int i = 0; i < n; i++) {
         for (int j = deadline[i] - 1; j >= 0; j--) {
             if (ans[j] == '0') {
