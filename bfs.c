@@ -58,14 +58,11 @@ void bfs(struct graph* graph, int v){
     int queue[1000];
     int rear=-1;
     int front=-1;
-
     graph->visited[v]=1;
     queue[++rear]=v;
-
     while(front!=rear){
         int temp=queue[++front];
         printf("%d ",temp);
-
         struct node* pop=graph->adj_lists[temp].head;
         while(pop!=NULL){
             int t=pop->vertex;

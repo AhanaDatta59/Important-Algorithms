@@ -16,7 +16,6 @@ struct Graph* adjMatrix(int v){
     for(int i=0;i<g->V;i++){
         g->adj[i]=(int *)malloc((g->V)*sizeof(int));
     }
-
     for(int i=0;i<g->V;i++){
         for(int j=0;j<g->V;j++){
             g->adj[i][j]=0;
